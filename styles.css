@@ -1,0 +1,255 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(0, 0, 33);
+    color: white;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(18, 18, 94);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 23px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: rgb(151, 151, 217);
+    font-size: 1.01rem;
+}
+
+/* Hero Section */
+.firstsection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 120px 10%;
+}
+
+.firstsection div {
+    width: 45%;
+}
+
+.leftsection {
+    font-size: 2rem;
+    line-height: 1.6;
+}
+
+.rightsection img {
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Social Icons */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+.social-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.social-icon img {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+}
+
+/* Learning Experience Section */
+.secondsection {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+/* Left Side (Developer Image) */
+.dev-container {
+    width: 40%;
+    text-align: center;
+}
+
+.dev-image {
+    width: 500px;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Right Side (HTML, DSA) */
+.right-side {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.hover-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
+}
+
+/* Small Images */
+.small-img {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+}
+
+/* Hidden Description (Visible on Hover) */
+.hover-desc {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.hover-item:hover .hover-desc {
+    opacity: 1;
+}
+
+/* Learning Section */
+.learning-section {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.learning-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 180px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.learning-item:hover {
+    transform: scale(1.1);
+}
+
+.learning-item img {
+    width: 100px;
+    height: auto;
+    object-fit: contain;
+}
+
+.learning-item p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* Timeline Section */
+.timeline {
+    max-width: 80vw;
+    margin: auto;
+}
+
+.timeline-item {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.timeline-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
+}
+
+.timeline-content {
+    background: rgb(18, 18, 94);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+    transition: background 0.3s ease-in-out;
+}
+
+.timeline-item:hover .timeline-content {
+    background: rgba(170, 107, 228, 0.8);
+}
+
+/* Contact Form */
+.contact-form {
+    text-align: center;
+    margin: 50px auto;
+}
+
+.contact-form form input,
+.contact-form form textarea,
+.contact-form form button {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .firstsection {
+        flex-direction: column;
+        text-align: center;
+    }
+    .leftsection {
+        text-align: center;
+        width: 80%;
+    }
+    .rightsection img {
+        width: 80%;
+        max-width: 300px;
+    }
+    .box {
+        flex-direction: column;
+        align-items: center;
+    }
+    .dev-container {
+        width: 100%;
+    }
+    .right-side {
+        width: 100%;
+    }
+}
